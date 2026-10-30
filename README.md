@@ -89,6 +89,23 @@ SQLAlchemy -> SQLite (local file)
        +--> rules for log severity and incident suggestions
 ```
 
+
+## Dashboard Preview
+
+![OpsPilot AI Dashboard](image.png)
+
+### Features Demonstrated
+
+- Real-time-style service health dashboard with automatic refresh
+- Simulated microservice log generation
+- Error-based incident detection and tracking
+- Incident severity and status monitoring
+- Rule-based investigation suggestions
+- Incident resolution workflow
+- FastAPI backend with SQLite persistence
+- React frontend with interactive monitoring views
+
+
 ## Security and limitations
 
 **This is a development demo, not a production monitoring system.** There is no authentication or RBAC, the server accepts unauthenticated logs, the storage is SQLite, and there are no real alert notifications, rate limits, metrics ingestion or distributed tracing. Never expose the API to the public internet or submit real user/production logs. The frontend is intentionally pointed at the local backend via Vite's dev proxy.
